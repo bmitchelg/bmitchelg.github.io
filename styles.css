@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fafafa;
+}
+
+.hero-photo {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.hero-content .wedding-date {
+  font-size: 1rem;
+  color: #666;
+}
+
+.countdown {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content .wedding-date {
+    font-size: 0.9rem;
+  }
+
+  .countdown {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .hero-photo {
+    max-width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content .wedding-date {
+    font-size: 0.8rem;
+  }
+
+  .countdown {
+    font-size: 0.8rem;
+  }
+}
