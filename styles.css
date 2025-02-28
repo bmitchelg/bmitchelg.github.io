@@ -1,41 +1,84 @@
-/* General Styles */
-body {
-  font-family: 'Georgia', serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #fefefe;
+/* -----------------------------------------------------
+   COMBINED & UPDATED CSS
+   (Includes Original Code + Requested Changes)
+----------------------------------------------------- */
+
+/*
+  Import required Google Fonts:
+  - Great Vibes (for "Jamie & Mitchel" top header)
+  - Lora (for overall text)
+  - Playfair Display (for sub-headers)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* New Color Palette (Hex Codes):
+   - Blush      (#DCCFBF) for main background
+   - Ivory      (#F2F3F1) for off-white sections/containers
+   - Terracotta (#B37B64) for headers and large text
+   - Black      (#000000) for paragraph and list text
+*/
+
+/* CSS Variables for Palette */
+:root {
+  --blush: #DCCFBF;
+  --ivory: #F2F3F1;
+  --terracotta: #B37B64;
+  --black: #000000;
 }
 
+/* Reset & Box-Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------------------
+   Base Styles
+----------------------------------------------------- */
+body {
+  font-family: 'Lora', serif; /* Replaces Georgia with Lora */
+  background-color: var(--blush); /* Main background */
+  color: var(--black);
+}
+
+/* Links */
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--black);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--terracotta);
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Header Styles */
+/* -----------------------------------------------------
+   Header
+----------------------------------------------------- */
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--ivory);
   padding: 20px 10px;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Keep "Jamie & Mitchel" in Great Vibes (cursive) */
 .header-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 5px 0;
   text-align: center;
+  color: var(--terracotta);
 }
 
 .nav-links {
@@ -43,111 +86,235 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-top: 10px;
 }
 
 .nav-links a {
   font-size: 1rem;
   font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .nav-links a:hover {
-  background-color: #f0f0f0;
+  background-color: var(--ivory);
+  border-color: var(--terracotta);
 }
 
-/* Hero Section */
+/* -----------------------------------------------------
+   Hero Section
+----------------------------------------------------- */
 .hero {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #fafafa;
+  padding: 40px 20px;
 }
 
 .hero-photo {
   max-width: 90%;
   height: auto;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content h2 {
-  font-size: 1.8rem;
-  margin: 20px 0;
-  color: #333;
-}
-
-.hero-content .wedding-date {
-  font-size: 1rem;
-  color: #666;
+/* Updated to non-cursive for sub-headers (besides the top "Jamie & Mitchel") */
+.hero h2 {
+  font-family: 'Playfair Display', serif; /* Elegant & readable */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--terracotta);
 }
 
 .countdown {
-  font-size: 1rem;
-  margin-top: 20px;
-  color: #444;
+  /* Use the same font as the site (Lora) */
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--black);
 }
 
-/* Footer */
+/* Countdown Grammar Fix: add "and" after the 3rd span (Minutes) */
+.countdown span:nth-child(3)::after {
+  content: " and";
+}
+
+/* -----------------------------------------------------
+   Section Wrappers
+----------------------------------------------------- */
+.section-wrapper {
+  padding: 40px 20px;
+  text-align: center; /* Keep headings centered */
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--ivory);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Headings in sections: Terracotta and centered
+   Updated to non-cursive "Playfair Display" for sub-headers */
+.content-container h2 {
+  color: var(--terracotta);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Left-align text for paragraphs and lists (except RSVP) */
+.left-align-section p,
+.left-align-section ul,
+.left-align-section li,
+.left-align-section iframe {
+  text-align: left;
+  color: var(--black);
+}
+
+/* Optional: styling a .date-text (e.g., "July 17th, 2025") */
+.date-text {
+  color: var(--black);
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+/* -----------------------------------------------------
+   Footer
+----------------------------------------------------- */
 .footer {
   text-align: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: var(--ivory);
+  color: var(--black);
+  padding: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+/* -----------------------------------------------------
+   Responsive Media Queries
+----------------------------------------------------- */
 @media (max-width: 768px) {
-  .header-title {
-    font-size: 1.8rem;
-  }
-
+  /* Hide Top Section Links on Mobile (#1) */
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    display: none;
   }
 
-  .nav-links a {
-    font-size: 0.9rem;
-    padding: 8px 15px;
+  .header-title {
+    font-size: 2.5rem;
   }
 
-  .hero-content h2 {
+  .hero h2 {
     font-size: 1.6rem;
   }
 
-  .hero-content .wedding-date {
-    font-size: 0.9rem;
+  .countdown {
+    font-size: 1rem;
   }
 
-  .countdown {
-    font-size: 0.9rem;
+  .section-wrapper {
+    padding: 30px 15px;
+  }
+
+  .content-container {
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .header-title {
-    font-size: 1.5rem;
-  }
-
-  .nav-links a {
-    font-size: 0.8rem;
-    padding: 6px 10px;
+    font-size: 2rem;
   }
 
   .hero-photo {
     max-width: 100%;
   }
 
-  .hero-content h2 {
+  .hero h2 {
     font-size: 1.4rem;
   }
 
-  .hero-content .wedding-date {
-    font-size: 0.8rem;
+  .countdown {
+    font-size: 0.95rem;
   }
 
-  .countdown {
-    font-size: 0.8rem;
+  .section-wrapper {
+    padding: 20px 10px;
   }
+}
+
+/* -----------------------------------------------------
+   Hamburger Menu (Unchanged)
+----------------------------------------------------- */
+.hamburger-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1100;
+  background: none;
+  border: none;
+  color: var(--black);
+}
+
+.hamburger-nav {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: right 0.3s ease-in-out;
+  padding-top: 60px;
+  z-index: 1100;
+}
+
+.hamburger-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hamburger-nav ul li {
+  padding: 15px;
+}
+
+.hamburger-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.hamburger-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-nav.active {
+  right: 0;
+}
+
+/* -----------------------------------------------------
+   7. Fix Google Maps iFrame Overflow
+----------------------------------------------------- */
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border: 0;
+  object-fit: cover; /* ensures scaling inside the container */
 }
