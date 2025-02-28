@@ -11,7 +11,33 @@ function updateCountdown() {
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-  countdownElement.textContent = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+  countdownElement.textContent = `We have ${days} days ${hours} hours ${minutes} minutes and ${seconds} seconds until we're married!`;
 }
 
 setInterval(updateCountdown, 1000);
+
+// Hamburger Menu
+function toggleMenu() {
+  const nav = document.querySelector('.hamburger-nav');
+  nav.classList.toggle('active');
+}
+
+// Close menu when a link is clicked
+document.querySelectorAll('.hamburger-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.hamburger-nav').classList.remove('active');
+  });
+});
+
+// Close menu when clicking outside it
+document.addEventListener('click', (e) => {
+  const nav = document.querySelector('.hamburger-nav');
+  const icon = document.querySelector('.hamburger-icon');
+
+  // Only close if menu is active and click is outside nav & icon
+  if (nav.classList.contains('active') &&
+      !nav.contains(e.target) &&
+      !icon.contains(e.target)) {
+    nav.classList.remove('active');
+  }
+});
