@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jamie and Mitchel's Wedding</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+    <nav class="hamburger-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#travelAndStay">Travel & Stay</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#attire">Attire</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header" id="home">
     <h1 class="header-title">Jamie & Mitchel</h1>
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#timeline">Schedule</a></li>
+        <li><a href="#schedule">Schedule</a></li>
         <li><a href="#location">Location</a></li>
-        <li><a href="#stay">Travel & Stay</a></li>
-        <li><a href="#gifts">Registry</a></li>
+        <li><a href="#travelAndStay">Travel & Stay</a></li>
+        <li><a href="#registry">Registry</a></li>
         <li><a href="#attire">Attire</a></li>
         <li><a href="#rsvp">RSVP</a></li>
       </ul>
@@ -23,12 +39,96 @@
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section id="hero" class="hero">
-      <div class="hero-content">
-        <img src="https://assets.codepen.io/8814056/IMG_9692.jpeg" alt="Jamie and Mitchel" class="hero-photo">
-        <h2>The Wedding of Jamie and Mitchel</h2>
-        <p class="wedding-date">July 17th, 2025</p>
-        <div id="countdown" class="countdown"></div>
+      <img
+        src="https://assets.codepen.io/8814056/IMG_9692.jpeg"
+        alt="Jamie and Mitchel"
+        class="hero-photo"
+      />
+      <!-- Use .date-text class to style the date -->
+      <h2 class="date-text">July 17th, 2025</h2>
+      <div id="countdown" class="countdown"></div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="section-wrapper">
+      <div class="content-container left-align-section">
+        <h2>Draft Schedule</h2>
+        <ul>
+          <li>0900 - Setup</li>
+          <li>1600 - Ceremony</li>
+          <li>1730 - Dinner and drinks</li>
+          <li>2100 - Last call</li>
+          <li>2200 - Thanks for coming!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="location" class="section-wrapper">
+      <div class="content-container left-align-section">
+        <h2>This is where we're getting married!</h2>
+        <!-- Wrap the Google Maps iframe in .map-container -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.378548704999!2d-122.64858538773886!3d45.80367661060313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54944dab4f704417%3A0xf9cfb2e94bd06a0d!2sVintage%20Gardens%20Rustic%20Events!5e0!3m2!1sen!2sus!4v1739938530571!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL & STAY SECTION -->
+    <section id="travelAndStay" class="section-wrapper">
+      <div class="content-container left-align-section">
+        <h2>Places to Stay, Where to Eat, and Things to Do</h2>
+        <p>Information coming soon.</p>
+      </div>
+    </section>
+
+    <!-- REGISTRY SECTION -->
+    <section id="registry" class="section-wrapper">
+      <div class="content-container left-align-section">
+        <h2>Registry</h2>
+        <p>Information coming soon.</p>
+      </div>
+    </section>
+
+    <!-- ATTIRE SECTION -->
+    <section id="attire" class="section-wrapper">
+      <div class="content-container left-align-section">
+        <h2>What to Wear</h2>
+        <p>Guidelines coming soon.</p>
+      </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section id="rsvp" class="section-wrapper">
+      <div class="content-container">
+        <h2>RSVP</h2>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdLFOLGdmgXUma0FZ7Hg5RY9fULJsVVlLIobKMFoDW-jxyaBg/viewform?embedded=true"
+          width="100%"
+          height="1000"
+          frameborder="0"
+          marginheight="2px"
+          marginwidth="2px"
+        >
+          Loading…
+        </iframe>
+        <p></p>
+        <a
+          href="https://forms.gle/8wq6TuFPHDFqDi817"
+          target="_blank"
+        >Click here if the form above is not working.</a>
+        <p>Email: tor.clay@gmail.com</p>
+        <p>Text or call Mitchel or Jamie</p>
       </div>
     </section>
   </main>
