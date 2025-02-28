@@ -1,24 +1,9 @@
-/* -----------------------------------------------------
-   COMBINED & UPDATED CSS
-   (Includes Original Code + Requested Changes)
------------------------------------------------------ */
-
 /*
-  Import required Google Fonts:
-  - Great Vibes (for "Jamie & Mitchel" top header)
-  - Lora (for overall text)
-  - Playfair Display (for sub-headers)
+  Google Fonts: Great Vibes, Lora, Playfair Display
 */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-/* New Color Palette (Hex Codes):
-   - Blush      (#DCCFBF) for main background
-   - Ivory      (#F2F3F1) for off-white sections/containers
-   - Terracotta (#B37B64) for headers and large text
-   - Black      (#000000) for paragraph and list text
-*/
-
-/* CSS Variables for Palette */
+/* CSS Variables */
 :root {
   --blush: #DCCFBF;
   --ivory: #F2F3F1;
@@ -33,12 +18,9 @@
   padding: 0;
 }
 
-/* -----------------------------------------------------
-   Base Styles
------------------------------------------------------ */
 body {
-  font-family: 'Lora', serif; /* Replaces Georgia with Lora */
-  background-color: var(--blush); /* Main background */
+  font-family: 'Lora', serif;
+  background-color: var(--blush);
   color: var(--black);
 }
 
@@ -48,7 +30,6 @@ a {
   color: var(--black);
   transition: color 0.3s ease;
 }
-
 a:hover {
   color: var(--terracotta);
 }
@@ -57,9 +38,7 @@ ul {
   list-style-type: none;
 }
 
-/* -----------------------------------------------------
-   Header
------------------------------------------------------ */
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -71,7 +50,6 @@ ul {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Keep "Jamie & Mitchel" in Great Vibes (cursive) */
 .header-title {
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
@@ -103,9 +81,7 @@ ul {
   border-color: var(--terracotta);
 }
 
-/* -----------------------------------------------------
-   Hero Section
------------------------------------------------------ */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -119,33 +95,24 @@ ul {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Updated to non-cursive for sub-headers (besides the top "Jamie & Mitchel") */
 .hero h2 {
-  font-family: 'Playfair Display', serif; /* Elegant & readable */
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 10px;
   color: var(--terracotta);
 }
 
 .countdown {
-  /* Use the same font as the site (Lora) */
   font-family: 'Lora', serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--black);
 }
 
-/* Countdown Grammar Fix: add "and" after the 3rd span (Minutes) */
-.countdown span:nth-child(3)::after {
-  content: " and";
-}
-
-/* -----------------------------------------------------
-   Section Wrappers
------------------------------------------------------ */
+/* Section Wrappers */
 .section-wrapper {
   padding: 40px 20px;
-  text-align: center; /* Keep headings centered */
+  text-align: center;
 }
 
 .content-container {
@@ -157,8 +124,6 @@ ul {
   padding: 30px;
 }
 
-/* Headings in sections: Terracotta and centered
-   Updated to non-cursive "Playfair Display" for sub-headers */
 .content-container h2 {
   color: var(--terracotta);
   text-align: center;
@@ -167,7 +132,7 @@ ul {
   margin-bottom: 15px;
 }
 
-/* Left-align text for paragraphs and lists (except RSVP) */
+/* Left-align text for paragraphs and lists */
 .left-align-section p,
 .left-align-section ul,
 .left-align-section li,
@@ -176,16 +141,13 @@ ul {
   color: var(--black);
 }
 
-/* Optional: styling a .date-text (e.g., "July 17th, 2025") */
 .date-text {
   color: var(--black);
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* -----------------------------------------------------
-   Footer
------------------------------------------------------ */
+/* Footer */
 .footer {
   text-align: center;
   background-color: var(--ivory);
@@ -194,31 +156,23 @@ ul {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* -----------------------------------------------------
-   Responsive Media Queries
------------------------------------------------------ */
+/* Responsive Media Queries */
 @media (max-width: 768px) {
-  /* Hide Top Section Links on Mobile (#1) */
   .nav-links {
-    display: none;
+    display: none; /* Hide top links on mobile */
   }
-
   .header-title {
     font-size: 2.5rem;
   }
-
   .hero h2 {
     font-size: 1.6rem;
   }
-
   .countdown {
     font-size: 1rem;
   }
-
   .section-wrapper {
     padding: 30px 15px;
   }
-
   .content-container {
     padding: 20px;
   }
@@ -228,27 +182,21 @@ ul {
   .header-title {
     font-size: 2rem;
   }
-
   .hero-photo {
     max-width: 100%;
   }
-
   .hero h2 {
     font-size: 1.4rem;
   }
-
   .countdown {
     font-size: 0.95rem;
   }
-
   .section-wrapper {
     padding: 20px 10px;
   }
 }
 
-/* -----------------------------------------------------
-   Hamburger Menu (Unchanged)
------------------------------------------------------ */
+/* Hamburger Menu */
 .hamburger-icon {
   position: fixed;
   top: 20px;
@@ -264,7 +212,7 @@ ul {
 .hamburger-nav {
   position: fixed;
   top: 0;
-  right: -250px; /* Initially hidden */
+  right: -250px;
   width: 250px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
@@ -300,15 +248,12 @@ ul {
   right: 0;
 }
 
-/* -----------------------------------------------------
-   7. Fix Google Maps iFrame Overflow
------------------------------------------------------ */
+/* Map Container */
 .map-container {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
 }
-
 .map-container iframe {
   width: 100%;
   height: 100%;
@@ -316,5 +261,50 @@ ul {
   max-height: 100%;
   display: block;
   border: 0;
-  object-fit: cover; /* ensures scaling inside the container */
+  object-fit: cover;
+}
+
+/* ---------------------------------------
+   TAB SYSTEM (Added/Updated)
+----------------------------------------*/
+
+/* Hide sections by default with a .hidden class */
+.hidden {
+  display: none;
+}
+
+/* Updated .tab-navigation to match top nav style */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Matches nav-links gap */
+  margin-bottom: 20px;
+}
+
+/* Match the .nav-links a styling */
+.tab-navigation button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-color: transparent; 
+  color: var(--black);
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+}
+
+.tab-navigation button:hover {
+  background-color: var(--ivory);
+  border-color: var(--terracotta);
+}
+
+/* Highlight the active tab */
+.tab-navigation button.active {
+  background-color: var(--ivory);
+  border-color: var(--terracotta);
+  /* Optional: change text color if you want:
+     color: var(--terracotta);
+  */
 }
