@@ -52,10 +52,11 @@
     <!-- SCHEDULE SECTION -->
     <section id="schedule" class="section-wrapper">
       <div class="content-container left-align-section">
-        <h2>Draft Schedule</h2>
+        <h2>Schedule</h2>
+        <p>Most of our schedule is still a work in progress and will be updated as soon as we've nailed something down. Our ceremony time is official and we look forward to seeing you all there!</p>
         <ul>
           <li>0900 - Setup</li>
-          <li>1600 - Ceremony</li>
+          <li>1530 - Ceremony</li>
           <li>1730 - Dinner and drinks</li>
           <li>2100 - Last call</li>
           <li>2200 - Thanks for coming!</li>
@@ -84,6 +85,13 @@
     <section id="travelAndStay" class="section-wrapper">
       <div class="content-container left-align-section">
         <h2>Places to Stay, Places to Eat, and Things to Do</h2>
+        <!-- TAB NAVIGATION -->
+        <div class="tab-navigation">
+          <!-- Clicking these calls showTab('id') -->
+          <button onclick="showTab('hotel')">Places to Stay</button>
+          <button onclick="showTab('placesToEat')">Places to Eat</button>
+          <button onclick="showTab('thingsToDo')">Things to Do</button>
+        </div>
         <div id="hotel">
   <ul>
     <li>
@@ -125,118 +133,442 @@
       8300 NE Vancouver Mall Loop, Vancouver, WA 98662<br>
       (360) 828-9299
     </li><br>
+  
+      <li>
+        <a href="https://www.google.com/maps/search/Dicky%27s+RV+Resort%2C+Ridgefield%2C+WA" target="_blank">
+          Dicky's RV Resort
+        </a> - 5 miles<br>
+        17402 NE Delfel Rd, Ridgefield, WA 98642<br>
+        (360) 887-8983<br><br>
+      </li>
+
+      <li>
+        <a href="https://www.google.com/maps/search/Big+Fir+Campground+%26+RV+Park%2C+Vancouver%2C+WA" target="_blank">
+          Big Fir Campground & RV Park
+        </a> - 2 miles away<br>
+        7610 NE 192nd Ave, Vancouver, WA 98682<br>
+        (360) 892-2114<br><br>
+      </li>
+
+      <li>
+        <a href="https://www.google.com/maps/search/Columbia+Riverfront+RV+Park%2C+Woodland%2C+WA" target="_blank">
+          Columbia Riverfront RV Park
+        </a> - 15 miles away<br>
+        1881 Dike Rd, Woodland, WA 98674<br>
+        (360) 225-2227<br><br>
+      </li>
+
+      <li>
+        <a href="https://www.google.com/maps/search/Vancouver+RV+Park%2C+Vancouver%2C+WA" target="_blank">
+          Vancouver RV Park
+        </a> - 11 miles away<br>
+        7603 NE 13th Ave, Vancouver, WA 98665<br>
+        (360) 695-1158<br><br>
+      </li>
+
+      <li>
+        <a href="https://www.google.com/maps/place/McMenamins+Kalama+Harbor+Lodge/@46.0048783,-122.849726,17z/data=!4m10!3m9!1s0x54944160539f7f31:0x41028d4790ba03b0!5m3!1s2025-03-03!4m1!1i2!8m2!3d46.0048783!4d-122.8471511!16s%2Fg%2F11f3rgkd9t?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          McMenamins Kalama Harbor Lodge
+        </a><br>
+        215 Hendrickson Dr, Kalama, WA 98625<br>
+        Distance to PDX: ~40 miles<br>
+        Distance to Vintage Gardens: ~20 miles<br>
+        (360) 673-6970
+      </li><br>
+
+      <li>
+        <a href="https://www.google.com/maps/place/McMenamins+Kennedy+School/@45.564491,-122.6325809,17z/data=!3m1!5s0x5495a6e8179cf423:0xfbaa73a985d5df0a!4m10!3m9!1s0x5495a6e841c06601:0x4006a62af99f8de0!5m3!1s2025-03-03!4m1!1i2!8m2!3d45.564491!4d-122.630006!16s%2Fm%2F0gkym0h?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          McMenamins Kennedy School
+        </a><br>
+        5736 NE 33rd Ave, Portland, OR 97211<br>
+        Distance to PDX: ~5 miles<br>
+        Distance to Vintage Gardens: ~25 miles<br>
+        (503) 249-3983
+      </li><br>
+
+      <li>
+        <a href="https://www.google.com/maps/place/McMenamins+Edgefield/@45.5373482,-122.4096822,17z/data=!3m1!5s0x5495a2ae8374c0d5:0x48970ab66dc4d207!4m9!3m8!1s0x5495a2ae617645a7:0x9975eb0f90219342!5m2!4m1!1i2!8m2!3d45.5373482!4d-122.4071073!16s%2Fm%2F06_57j8?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          McMenamins Edgefield
+        </a><br>
+        2126 SW Halsey St, Troutdale, OR 97060<br>
+        Distance to PDX: ~10 miles<br>
+        Distance to Vintage Gardens: ~35 miles<br>
+        (503) 669-8610
+      </li><br>
+
+      <li>
+        <a href="https://www.google.com/maps/place/McMenamins+Crystal+Hotel/@45.5228246,-122.6859091,17z/data=!3m1!5s0x54950a030187b681:0xef0782fdcadee644!4m10!3m9!1s0x54950a03072a30c7:0xa4e9af799726e4a7!5m3!1s2025-03-13!4m1!1i2!8m2!3d45.5228246!4d-122.6833342!16s%2Fm%2F0gyx372?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          McMenamins Crystal Hotel
+        </a><br>
+        303 SW 12th Ave, Portland, OR 97205<br>
+        Distance to PDX: ~10 miles<br>
+        Distance to Vintage Gardens: ~25 miles<br>
+        (503) 972-2670
+      </li><br>
+
+      <li>
+        <a href="https://www.google.com/maps/place/McMenamins+Grand+Lodge/@45.5215778,-123.088697,17z/data=!3m1!5s0x4c909f1e9adb65cb:0xe38bd56b27f7140d!4m9!3m8!1s0x54951a32a6714423:0xbcecdf2a8af83fd4!5m2!4m1!1i2!8m2!3d45.5215778!4d-123.0861221!16s%2Fg%2F11c4b3nnx9?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          McMenamins Grand Lodge
+        </a><br>
+        3505 Pacific Ave, Forest Grove, OR 97116<br>
+        Distance to PDX: ~30 miles<br>
+        Distance to Vintage Gardens: ~50 miles<br>
+        (503) 992-9533
+      </li><br>
+
+      <li>
+        <a href="https://www.google.com/maps/place/ilani/@45.8530426,-122.7100028,17z/data=!3m1!4b1!4m9!3m8!1s0x54944c264583686f:0xf9d688b523ed5460!5m2!4m1!1i2!8m2!3d45.8530426!4d-122.7074279!16s%2Fg%2F11dxsvfh0f?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Ilani Casino Resort
+        </a><br>
+        1 Cowlitz Way, Ridgefield, WA 98642<br>
+        Distance to PDX: ~25 miles<br>
+        Distance to Vintage Gardens: ~5 miles<br>
+        (877) 464-5264
+      </li><br>
+    </ul>
+</div>
+
+<div id="thingsToDo" class="hidden">
+  <ul>
+    <li>
+      <a href="https://www.google.com/maps/place/Big+Al's+Vancouver/@45.6078889,-122.5032696,17z/data=!3m1!4b1!4m6!3m5!1s0x5495a4c90127a87b:0x3504e8665644314a!8m2!3d45.6078889!4d-122.5006947!16s%2Fg%2F1th49358?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Big Al’s Family Entertainment Center</a><br>
+      16615 SE 18th St, Vancouver, WA 98683<br>
+      (360) 944-6118<br>
+      A massive entertainment complex featuring bowling, a large arcade, and a sports bar. Great for families and groups looking for a fun, casual outing.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Fort+Vancouver+Visitor+Center/@45.6261823,-122.6750592,15z/data=!3m1!4b1!4m6!3m5!1s0x5495af53155e443d:0x42e779eac26aab76!8m2!3d45.6261838!4d-122.6566053!16zL20vMDE2eWx6?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Fort Vancouver National Historic Site & Pearson Air Museum</a><br>
+      1501 E Evergreen Blvd, Vancouver, WA 98661<br>
+      (360) 816-6230<br>
+      A restored 19th-century fur trading post with costumed interpreters, historical demonstrations, and exhibits. The adjacent Pearson Air Museum showcases vintage aircraft and aviation history.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/OMSI/@45.5083931,-122.6686104,17z/data=!3m1!4b1!4m6!3m5!1s0x54950a72e8b112d1:0xd074694827faf84c!8m2!3d45.5083931!4d-122.6660355!16zL20vMDFzam1y?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Oregon Museum of Science & Industry (OMSI)</a><br>
+      1945 SE Water Ave, Portland, OR 97214<br>
+      (503) 797-4000<br>
+      A hands-on science museum featuring interactive exhibits, a planetarium, and a real submarine tour. Perfect for families and science enthusiasts of all ages.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/NW+Escape+Experience/@45.6779571,-122.6591435,17z/data=!3m1!4b1!4m6!3m5!1s0x5495aef6a5d31f1f:0x5a86adce7d196715!8m2!3d45.6779571!4d-122.6565686!16s%2Fg%2F11ddyk9jn4?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">NW Escape Experience</a><br>
+      1503 NE 78th St Suite 14, Vancouver, WA 98665<br>
+      (360) 787-7878<br>
+      A highly rated escape room with immersive storylines and challenging puzzles. A fun and engaging group activity for friends and family.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Overlook+Park/@45.8149886,-122.7491757,17z/data=!3m1!4b1!4m6!3m5!1s0x54944d893c33cbf3:0x17eea538d1235fef!8m2!3d45.8149886!4d-122.7466008!16s%2Fg%2F11c530jv1r?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Downtown Ridgefield & Overlook Park</a><br>
+      113-131 S Main Ave, Ridgefield, WA 98642<br>
+      A charming small-town district with local shops, cafes, and scenic views. Overlook Park provides a peaceful spot to relax and take in the natural beauty of the area.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Old+Liberty+Theater/@45.8158446,-122.7489312,17z/data=!3m1!4b1!4m6!3m5!1s0x54944d891afbbd85:0x1a1a31729e6db132!8m2!3d45.8158446!4d-122.7463563!16s%2Fg%2F1ts3fb0r?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Old Liberty Theater & Season’s Coffee</a><br>
+      115 N Main Ave, Ridgefield, WA 98642<br>
+      (360) 887-7260<br>
+      A historic theater that hosts live music and performances. Inside, Season’s Coffee offers a cozy atmosphere for enjoying a cup of locally roasted coffee.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Cedar+Creek+Grist+Mill/@45.9384144,-122.5857767,17z/data=!3m1!4b1!4m6!3m5!1s0x54944f39af2a3bb9:0xf55ba50da732ba50!8m2!3d45.9384144!4d-122.5832018!16s%2Fm%2F06_hp41?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Cedar Creek Grist Mill</a><br>
+      43907 NE Grist Mill Rd, Woodland, WA 98674<br>
+      (360) 225-5832<br>
+      A working 19th-century water-powered grain mill that offers free tours and demonstrations. The surrounding area is scenic and great for photos.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Bethany+Vineyard+%26+Winery/@45.8076459,-122.6313842,17z/data=!3m1!4b1!4m6!3m5!1s0x54944cb797c3f2c5:0x419c6bf5d0808a3e!8m2!3d45.8076459!4d-122.6288093!16s%2Fm%2F0lgd1q0?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Bethany Vineyard & Winery</a><br>
+      4115 NE 259th St, Ridgefield, WA 98642<br>
+      (360) 887-3525<br>
+      A beautiful vineyard with a tranquil lake and tasting room. Offers wine flights and a relaxing setting to enjoy the Pacific Northwest countryside.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/14+Acres+Vineyard+and+Winery/@45.7966452,-122.6499164,17z/data=!3m1!4b1!4m6!3m5!1s0x54944cd694dea43d:0xfeb42fa7d1d51906!8m2!3d45.7966452!4d-122.6473415!16s%2Fg%2F1tgc96rp?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Three Brothers Vineyard & Winery</a><br>
+      2411 NE 244th St, Ridgefield, WA 98642<br>
+      (360) 887-2085<br>
+      A family-owned winery known for its inviting atmosphere and live music events. A great place to enjoy local wines with scenic views.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Ridgefield+National+Wildlife+Refuge/@45.8306093,-122.7498815,17z/data=!3m1!4b1!4m6!3m5!1s0x549452f408e66ae7:0x5104d9e0658ac9cc!8m2!3d45.8306093!4d-122.7473066!16zL20vMDc3dnRo?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ridgefield National Wildlife Refuge</a><br>
+      28908 NW Main Ave, Ridgefield, WA 98642<br>
+      (360) 887-4106<br>
+      A large nature reserve featuring an auto-tour route and walking trails. Visitors can see a variety of wildlife, including birds, deer, and otters.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Ape+Cave+Interpretive+Site/@46.1096556,-122.2113694,17z/data=!3m1!4b1!4m6!3m5!1s0x54969d382249a5af:0x44648837f87f7cf2!8m2!3d46.1096556!4d-122.2113694!16s%2Fg%2F12qfc9ql5?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ape Caves</a><br>
+      Mt St Helens National Volcanic Monument, Cougar, WA 98616<br>
+      A series of lava tubes that visitors can explore with flashlights. A unique underground hiking experience.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Beacon+Rock+Trailhead/@45.6285873,-122.040663,15z/data=!3m1!4b1!4m6!3m5!1s0x5495e9b7cabc2049:0xaf15f3ef646369d5!8m2!3d45.6285888!4d-122.0222091!16s%2Fg%2F11d_v3p4kl?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Beacon Rock</a><br>
+      Beacon Rock State Park, North Bonneville, WA 98639<br>
+      A massive rock formation with a winding trail to the top, offering stunning views of the Columbia River Gorge.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Multnomah+Falls/@45.5761951,-122.1183112,17z/data=!3m1!4b1!4m6!3m5!1s0x5495eb1e945a5877:0x1eeaf88627083bc6!8m2!3d45.5761597!4d-122.1157756!16zL20vMDF5cXl2?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Multnomah Falls</a><br>
+      Columbia River Gorge National Scenic Area, Bridal Veil, OR 97010<br>
+      Oregon’s tallest waterfall, with an easily accessible viewing platform and hiking trails leading to the top.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Johnston+Ridge+Observatory/@46.2752687,-122.2197869,17z/data=!3m1!4b1!4m6!3m5!1s0x5496a29af9bcfdff:0xae945e5cbbdfb8ed!8m2!3d46.2752687!4d-122.217212!16s%2Fg%2F1tg2d688?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Johnston Ridge Observatory (Mt St. Helens)</a><br>
+      24000 Spirit Lake Hwy, Toutle, WA 98649<br>
+      (360) 274-2140<br>
+      An observatory offering panoramic views of Mount St Helens and sometimes wild life. Light hiking trails.<br><br>
+    </li>
+    <li>
+      <a href="https://www.google.com/maps/place/Bridgeport+Village/@45.3957237,-122.7553993,17z/data=!3m1!4b1!4m6!3m5!1s0x549572eb6deb899d:0x22e9ae980bd3fd3a!8m2!3d45.3957237!4d-122.7528244!16s%2Fm%2F04ldz71?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Bridgeport Village (Shopping Center)</a><br>
+      7455 SW Bridgeport Rd, Tigard, OR 97224<br>
+      (503) 968-1704<br>
+      An upscale outdoor shopping center featuring high-end retail stores, restaurants, and a movie theater.<br><br>
+    </li>
+  </ul>
+</div>
+        <div id="placesToEat" class="hidden">
+  <ul>
+    <li>
+      Michael Jordan's Steak House<br>
+      1 Cowlitz Way, Ridgefield, WA 98642<br>
+      (360) 887-6423<br>
+      An upscale steakhouse inside the ilani Casino Resort, known for top-quality steaks and bold flavors. The atmosphere is modern and refined, featuring a menu focused on prime cuts and seasonal ingredients—perfect for steak connoisseurs seeking a premier dining experience.
+    </li>
+    <br>
+
+    <li>
+      Fuel Bistro & Wine<br>
+      109 S 65th Ave, Suite 109, Ridgefield, WA 98642<br>
+      (360) 727-3759<br>
+      A cozy local bistro offering sandwiches, salads, and house-made soups by day and hearty specials by night. Known for high-quality, sustainable ingredients, it’s ideal for a relaxed lunch or an elegant dinner.
+    </li>
+    <br>
+
+    <li>
+      La Bottega Café Deli Wine Shop<br>
+      1905 Main St, Vancouver, WA 98660<br>
+      (360) 571-5010<br>
+      A charming Italian café and wine bar in downtown Vancouver, serving panini, fresh pastas, and housemade desserts. The atmosphere is intimate and unpretentious, great for a casual lunch or a cozy dinner with a glass of wine.
+    </li>
+    <br>
+
+    <li>
+      Elements Restaurant<br>
+      907 Main St, Vancouver, WA 98660<br>
+      (360) 258-0989<br>
+      An intimate upscale restaurant in downtown Vancouver offering creative, farm-to-table cuisine. The dining room is cozy and romantic, making it perfect for couples or small groups seeking an inventive meal.
+    </li>
+    <br>
+
+    <li>
+      Hudson’s Bar & Grill<br>
+      7801 NE Greenwood Dr, Vancouver, WA 98662<br>
+      (360) 816-6100<br>
+      A Northwest lodge-style restaurant with wood beams and a stone fireplace, serving seasonal comfort food. Known for regional ingredients like huckleberry pancakes and cedar-plank salmon, it’s a welcoming atmosphere for brunch or a relaxed dinner.
+    </li>
+    <br>
+
+    <li>
+      DOSALAS Latin Kitchen + Tequila Bar<br>
+      777 Waterfront Way, Suite 102, Vancouver, WA 98660<br>
+      (360) 768-5249<br>
+      A trendy Latin fusion restaurant on the Vancouver waterfront, blending flavors from across Latin America with Pacific Northwest ingredients. Guests dine in an opulent, modern-chic space right on the river, sipping craft tequila cocktails and sharing small plates.
+    </li>
+    <br>
+
+    <li>
+      Salty’s on the Columbia River<br>
+      3839 NE Marine Dr, Portland, OR 97211<br>
+      (503) 288-4444<br>
+      A waterfront seafood grill famed for its panoramic river views and award-winning Northwest cuisine. Known for fresh seafood like Dungeness crab and salmon, plus a legendary brunch and romantic sunset dinners.
+    </li>
+    <br>
+
+    <li>
+      Mother’s Bistro & Bar<br>
+      121 SW 3rd Ave, Portland, OR 97204<br>
+      (503) 464-1122<br>
+      A Portland institution renowned for homestyle comfort food served all day in a cozy, vintage-inspired dining room. The menu features hearty classics like biscuits and gravy and pot roast, all made from scratch with locally sourced ingredients.
+    </li>
+    <br>
+
+    <li>
+      Nostrana<br>
+      1401 SE Morrison St, Suite 101, Portland, OR 97214<br>
+      (503) 234-2427<br>
+      A rustic Italian restaurant in Southeast Portland, celebrated for wood-fired pizzas and fresh, seasonal fare. Its vaulted wood ceiling and lively but cozy ambiance make it great for families or group dining, with must-try dishes like the Insalata Nostrana.
+    </li>
+    <br>
+
+    <li>
+      Andina<br>
+      1314 NW Glisan St, Portland, OR 97209<br>
+      (503) 228-9535<br>
+      A vibrant Peruvian restaurant in the Pearl District, known for inventive tapas, pisco cocktails, and live Latin music. Its warm, bustling dining room offers an elegant South American flair—perfect for festive group dinners or lively date nights.
+    </li>
+    <br>
+
+    <li>
+      Departure Restaurant + Lounge<br>
+      525 SW Morrison St, 15th Floor, Portland, OR 97204<br>
+      (503) 802-5370<br>
+      A sleek rooftop restaurant atop The Nines Hotel, featuring modern Pan-Asian cuisine with stunning city views. The chic ambiance, two outdoor decks, and inventive dim sum and sushi make it ideal for a swanky night out.
+    </li>
+    <br>
+
+    <li>
+      Carol’s Corner Cafe<br>
+      7800 NE St Johns Rd, Vancouver, WA 98665<br>
+      (360) 573-6357<br>
+      A local favorite for hearty breakfasts with generous portions, like fluffy pancakes and big omelets. Its friendly diner atmosphere and quick service make it perfect for a casual morning start.
+    </li>
+    <br>
+
+    <li>
+      Bleu Door Bakery<br>
+      2413 Main St, Vancouver, WA 98660<br>
+      (360) 693-2538<br>
+      A charming French-inspired bakery offering fresh pastries, quiches, and brunch dishes. Cozy and bistro-style, it’s a sweet spot for anyone craving artisan breads and rotating seasonal treats.
+    </li>
+    <br>
+
+    <li>
+      Rosemary Cafe<br>
+      1001 Main St, Vancouver, WA 98660<br>
+      (360) 737-7611<br>
+      A small, family-run restaurant known for homemade comfort foods and a warm, inviting vibe. Breakfast classics like fluffy scrambles and French toast make it ideal for a laid-back morning meal.
+    </li>
+    <br>
+
+    <li>
+      Mon Ami<br>
+      1906 Main St, Vancouver, WA 98660<br>
+      (360) 750-5693<br>
+      A cozy café specializing in sweet and savory crêpes, plus rich coffee drinks. Its eclectic interior with local art adds to the charm, making it a hidden gem for brunch lovers.
+    </li>
+    <br>
+
+    <li>
+      Screen Door<br>
+      2337 E Burnside St, Portland, OR 97214<br>
+      (503) 542-0880<br>
+      A legendary Southern-inspired brunch destination famous for fried chicken & waffles and biscuits & gravy. Expect a lively crowd and generous portions that are well worth the wait.
+    </li>
+    <br>
+
+    <li>
+      Gravy<br>
+      3957 N Mississippi Ave, Portland, OR 97227<br>
+      (503) 287-8800<br>
+      A Portland staple known for massive breakfast plates, including signature house-made gravies (sausage or vegetarian). The warm, casual décor and hearty menu deliver comforting classics with a Northwest twist.
+    </li>
+    <br>
+
+    <li>
+      WareHouse ‘23<br>
+      100 Columbia St #102, Vancouver, WA 98660<br>
+      (360) 750-7256<br>
+      A mid-range American spot overlooking the Columbia River with a large patio perfect for sunny days. Enjoy fresh seafood, salads, and regional dishes alongside waterfront views—ideal for groups or a scenic date night.
+    </li>
+    <br>
+
+    <li>
+      Ecliptic Brewing<br>
+      825 N Cook St, Portland, OR 97227<br>
+      (503) 265-8002<br>
+      A popular craft brewery offering an inventive pub menu—burgers, salads, and seasonal specials—alongside house-brewed beers. With its spacious outdoor patio and celestial-themed décor, it’s a fun destination in Portland’s brewing scene.
+    </li>
+    <br>
+
+    <li>
+      Radio Room<br>
+      1101 NE Alberta St, Portland, OR 97211<br>
+      (503) 287-2346<br>
+      A funky bar and restaurant with a rooftop patio located in Portland’s vibrant Alberta Arts District. The colorful, retro décor and eclectic menu (from tacos to mac & cheese) create a lively spot for brunch, dinner, or cocktails.
+    </li>
+    <br>
+
+    <li>
+      Hey Love<br>
+      920 E Burnside St Suite 109, Portland, OR 97214<br>
+      (503) 719-5332<br>
+      A tropical-themed lounge and restaurant in the Jupiter NEXT Hotel, serving globally inspired shareable plates and creative cocktails. Neon lighting, greenery, and an eclectic vibe make it perfect for a laid-back yet trendy night out.
+    </li>
+    <br>
+
+    <li>
+      Interurban<br>
+      4057 N Mississippi Ave, Portland, OR 97227<br>
+      (503) 343-9449<br>
+      A stylish gastropub on North Mississippi Avenue with an industrial-meets-rustic interior, serving craft cocktails and elevated pub fare. Exposed brick, wood beams, and a cozy back patio provide the ideal setting for hearty sandwiches and charcuterie.
+    </li>
+    <br>
+
+    <li>
+      Teote House Café<br>
+      1615 SE 12th Ave, Portland, OR 97214<br>
+      (971) 888-5281<br>
+      A Venezuelan-inspired eatery featuring colorful décor, bright murals, and an expansive backyard patio. Known for arepas stuffed with savory meats or veggies, it’s a casual spot bursting with bold flavors—great for a fun group meal.
+    </li>
+    <br>
+
+    <li>
+      Country Cafe<br>
+      6370 Pioneer St, Ridgefield, WA 98642<br>
+      (360) 887-8201<br>
+      A cozy mom-and-pop diner serving comforting breakfasts all day, such as chicken fried steak and brioche French toast. Despite its unassuming location, it surprises visitors with its clean, welcoming setting and consistently delicious homestyle meals.
+    </li>
+    <br>
+
+    <li>
+      Pacific Northwest Best Fish Co.<br>
+      24415 NE 10th Ave, Ridgefield, WA 98642<br>
+      (360) 887-4268<br>
+      Part seafood market and part café, this spot serves ultra-fresh halibut & chips, mahi-mahi tacos, and creamy chowder. Voted among Clark County’s best seafood spots, it’s known for high-quality catch and a relaxed, no-fuss vibe.
+    </li>
+    <br>
+
+    <li>
+      3Peaks Public House & Taproom<br>
+      24415 NE 10th Ave, Ridgefield, WA 98642<br>
+      (360) 887-3157<br>
+      A community-focused taproom with a large backyard-style outdoor seating area, perfect for summer hangouts. Pair rotating local craft beers with fish & chips from the adjacent market or farm-fresh fare from on-site food carts.
+    </li>
+    <br>
+
+    <li>
+      Heathen Brewing Feral Public House<br>
+      1109 Washington St, Vancouver, WA 98660<br>
+      (360) 836-5255<br>
+      A lively gastropub with its own brews—IPAs, sours, and more—plus wood-fired pizzas, hearty salads, and shareable snacks. The rustic-industrial space boasts an expansive patio dubbed the area’s “undisputed patio king,” ideal for friendly gatherings.
+    </li>
+    <br>
+
+    <li>
+      Little Conejo<br>
+      114 W 6th St, Vancouver, WA 98660<br>
+      (360) 718-2633<br>
+      A trendy taquería and mezcal bar grinding organic Mexican corn daily for fresh tortillas in its acclaimed tacos. Casual and hip, it’s perfect for bold flavors, vibrant salsas, and a memorable agave-inspired cocktail.
+    </li>
+    <br>
+
+    <li>
+      La Bottega Cafe Deli Wine Shop<br>
+      1905 Main St, Vancouver, WA 98660<br>
+      (360) 571-5010<br>
+      A beloved fixture in Vancouver’s Uptown Village, combining an Italian café, deli, and wine shop under one roof. Enjoy gourmet sandwiches, handmade pastas, and imported specialties in a cozy atmosphere reminiscent of a European marketplace.
+    </li>
+    <br>
+
+    <li>
+      Wahi Hana (Tropical Tiki Bar)<br>
+      1819 Main St, Vancouver, WA 98660<br>
+      (360) 360-4656<br>
+      A 21+ tiki bar that immerses you in a Polynesian paradise with bamboo-thatch ceilings, tiki carvings, and theatrical lighting. Known for rum-based cocktails and Polynesian-inspired dishes, it’s a vibrant, escapist experience just minutes from Ridgefield.
+    </li>
+    <br>
   </ul>
 </div>
 
-          <div>
-        <div id="rv">
-          <ul>
-            <li>
-              <a href="https://www.google.com/maps/search/Dicky%27s+RV+Resort%2C+Ridgefield%2C+WA" target="_blank">
-                Dicky's RV Resort
-              </a> - 5 miles<br>
-              17402 NE Delfel Rd, Ridgefield, WA 98642<br>
-              (360) 887-8983<br><br>
-            </li>
-
-            <li>
-              <a href="https://www.google.com/maps/search/Big+Fir+Campground+%26+RV+Park%2C+Vancouver%2C+WA" target="_blank">
-                Big Fir Campground & RV Park
-              </a> - 2 miles away<br>
-              7610 NE 192nd Ave, Vancouver, WA 98682<br>
-              (360) 892-2114<br><br>
-            </li>
-
-            <li>
-              <a href="https://www.google.com/maps/search/Columbia+Riverfront+RV+Park%2C+Woodland%2C+WA" target="_blank">
-                Columbia Riverfront RV Park
-              </a> - 15 miles away<br>
-              1881 Dike Rd, Woodland, WA 98674<br>
-              (360) 225-2227<br><br>
-            </li>
-
-            <li>
-              <a href="https://www.google.com/maps/search/Vancouver+RV+Park%2C+Vancouver%2C+WA" target="_blank">
-                Vancouver RV Park
-              </a> - 11 miles away<br>
-              7603 NE 13th Ave, Vancouver, WA 98665<br>
-              (360) 695-1158<br><br>
-            </li>
-          </ul>
-
-        </div>
-            <div>
-             <ul>
-  <li>
-    <a href="https://www.google.com/maps/place/McMenamins+Kalama+Harbor+Lodge/@46.0048783,-122.849726,17z/data=!4m10!3m9!1s0x54944160539f7f31:0x41028d4790ba03b0!5m3!1s2025-03-03!4m1!1i2!8m2!3d46.0048783!4d-122.8471511!16s%2Fg%2F11f3rgkd9t?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      McMenamins Kalama Harbor Lodge
-    </a><br>
-    215 Hendrickson Dr, Kalama, WA 98625<br>
-    Distance to PDX: ~40 miles<br>
-    Distance to Vintage Gardens: ~10 miles<br>
-    (360) 673-6970
-  </li><br>
-
-  <li>
-    <a href="https://www.google.com/maps/place/McMenamins+Kennedy+School/@45.564491,-122.6325809,17z/data=!3m1!5s0x5495a6e8179cf423:0xfbaa73a985d5df0a!4m10!3m9!1s0x5495a6e841c06601:0x4006a62af99f8de0!5m3!1s2025-03-03!4m1!1i2!8m2!3d45.564491!4d-122.630006!16s%2Fm%2F0gkym0h?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      McMenamins Kennedy School
-    </a><br>
-    5736 NE 33rd Ave, Portland, OR 97211<br>
-    Distance to PDX: ~5 miles<br>
-    Distance to Vintage Gardens: ~25 miles<br>
-    (503) 249-3983
-  </li><br>
-
-  <li>
-    <a href="https://www.google.com/maps/place/McMenamins+Edgefield/@45.5373482,-122.4096822,17z/data=!3m1!5s0x5495a2ae8374c0d5:0x48970ab66dc4d207!4m9!3m8!1s0x5495a2ae617645a7:0x9975eb0f90219342!5m2!4m1!1i2!8m2!3d45.5373482!4d-122.4071073!16s%2Fm%2F06_57j8?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      McMenamins Edgefield
-    </a><br>
-    2126 SW Halsey St, Troutdale, OR 97060<br>
-    Distance to PDX: ~10 miles<br>
-    Distance to Vintage Gardens: ~35 miles<br>
-    (503) 669-8610
-  </li><br>
-
-  <li>
-    <a href="https://www.google.com/maps/place/McMenamins+Crystal+Hotel/@45.5228246,-122.6859091,17z/data=!3m1!5s0x54950a030187b681:0xef0782fdcadee644!4m10!3m9!1s0x54950a03072a30c7:0xa4e9af799726e4a7!5m3!1s2025-03-13!4m1!1i2!8m2!3d45.5228246!4d-122.6833342!16s%2Fm%2F0gyx372?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      McMenamins Crystal Hotel
-    </a><br>
-    303 SW 12th Ave, Portland, OR 97205<br>
-    Distance to PDX: ~10 miles<br>
-    Distance to Vintage Gardens: ~25 miles<br>
-    (503) 972-2670
-  </li><br>
-
-  <li>
-    <a href="https://www.google.com/maps/place/McMenamins+Grand+Lodge/@45.5215778,-123.088697,17z/data=!3m1!5s0x4c909f1e9adb65cb:0xe38bd56b27f7140d!4m9!3m8!1s0x54951a32a6714423:0xbcecdf2a8af83fd4!5m2!4m1!1i2!8m2!3d45.5215778!4d-123.0861221!16s%2Fg%2F11c4b3nnx9?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      McMenamins Grand Lodge
-    </a><br>
-    3505 Pacific Ave, Forest Grove, OR 97116<br>
-    Distance to PDX: ~30 miles<br>
-    Distance to Vintage Gardens: ~50 miles<br>
-    (503) 992-9533
-  </li><br>
-
-  <li>
-    <a href="https://www.google.com/maps/place/ilani/@45.8530426,-122.7100028,17z/data=!3m1!4b1!4m9!3m8!1s0x54944c264583686f:0xf9d688b523ed5460!5m2!4m1!1i2!8m2!3d45.8530426!4d-122.7074279!16s%2Fg%2F11dxsvfh0f?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-      Ilani Casino Resort
-    </a><br>
-    1 Cowlitz Way, Ridgefield, WA 98642<br>
-    Distance to PDX: ~25 miles<br>
-    Distance to Vintage Gardens: ~5 miles<br>
-    (877) 464-5264
-  </li>
-</ul>
-
-            </div>
-      </div>
     </section>
 
     <!-- REGISTRY SECTION -->
     <section id="registry" class="section-wrapper">
       <div class="content-container left-align-section">
         <h2>Registry</h2>
-        <p>Information coming soon.</p>
+        <p>We're currently working on a registry / donation setup if you are interested in contributing to our dream honeymoon. Stay tuned!</p>
       </div>
     </section>
 
@@ -244,7 +576,7 @@
     <section id="attire" class="section-wrapper">
       <div class="content-container left-align-section">
         <h2>What to Wear</h2>
-        <p>Guidelines coming soon.</p>
+        <p>We will be updating this section soon with information to help the groomsmen get everything they need for the wedding. Semi-formal is the general attire for all attendees.</p>
       </div>
     </section>
 
