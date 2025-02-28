@@ -1,4 +1,6 @@
-// Countdown Timer
+/*******************************************************
+ * 1. Countdown Timer
+ *******************************************************/
 const countdownElement = document.getElementById('countdown');
 const weddingDate = new Date('2025-07-17T00:00:00');
 
@@ -7,16 +9,25 @@ function updateCountdown() {
   const timeLeft = weddingDate - now;
 
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  const hours = Math.floor(
+    (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor(
+    (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+  );
+  const seconds = Math.floor(
+    (timeLeft % (1000 * 60)) / 1000
+  );
 
-  countdownElement.textContent = `We have ${days} days ${hours} hours ${minutes} minutes and ${seconds} seconds until we're married!`;
+  countdownElement.textContent = 
+    `We have ${days} days ${hours} hours ${minutes} minutes and ${seconds} seconds until we're married!`;
 }
 
 setInterval(updateCountdown, 1000);
 
-// Hamburger Menu
+/*******************************************************
+ * 2. Hamburger Menu Toggle
+ *******************************************************/
 function toggleMenu() {
   const nav = document.querySelector('.hamburger-nav');
   nav.classList.toggle('active');
@@ -41,3 +52,19 @@ document.addEventListener('click', (e) => {
     nav.classList.remove('active');
   }
 });
+
+/*******************************************************
+ * 3. Tab System
+ *******************************************************/
+function showTab(tabId) {
+  // Array of all tab IDs
+  const allTabs = ['hotel', 'placesToEat', 'thingsToDo'];
+
+  // Hide each tab by adding the 'hidden' class
+  allTabs.forEach(id => {
+    document.getElementById(id).classList.add('hidden');
+  });
+
+  // Show the requested tab by removing 'hidden'
+  document.getElementById(tabId).classList.remove('hidden');
+}
