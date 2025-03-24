@@ -264,6 +264,15 @@ ul {
   object-fit: cover;
 }
 
+.color_link {
+  color: #206035; /* Emerald green */
+  text-decoration: none;
+}
+
+.color_link:hover {
+  text-decoration: underline;
+}
+
 /* ---------------------------------------
    TAB SYSTEM (Added/Updated)
 ----------------------------------------*/
