@@ -265,12 +265,12 @@ ul {
 }
 
 .color_link {
-  color: #206035; /* Emerald green */
+  color: #206035 !important; /* Emerald green */
   text-decoration: none;
 }
 
 .color_link:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* ---------------------------------------
