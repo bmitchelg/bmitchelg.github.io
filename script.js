@@ -2,7 +2,7 @@
  * 1. Countdown Timer
  *******************************************************/
 const countdownElement = document.getElementById('countdown');
-const weddingDate = new Date('2025-07-17T00:00:00');
+const weddingDate = new Date('2025-07-17T15:30:00');
 
 function updateCountdown() {
   const now = new Date();
